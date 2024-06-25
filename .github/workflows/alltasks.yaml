@@ -12,5 +12,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Generate PDF
-        run: create-all-tasks.sh
+        run: |
+          chmod ugo+x create-all-tasks.sh
+          ./create-all-tasks.sh
       - run: echo "Status ${{ job.status }}."
