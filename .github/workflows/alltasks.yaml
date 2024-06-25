@@ -11,8 +11,16 @@ jobs:
           sudo apt install -y libreoffice wkhtmltopdf pdftk
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Generate PDF
+      - name: prepare for commit and push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Generate PDFs
         run: |
           chmod ugo+x create-all-tasks.sh
           ./create-all-tasks.sh
+      - name: Commit and push
+        run: |
+          git commit -m "Created all-tasks.pdf"
+          git push
       - run: echo "Status ${{ job.status }}."
