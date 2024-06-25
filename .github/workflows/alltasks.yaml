@@ -1,0 +1,16 @@
+name: Create all-tasks.pdf
+run-name: Creating all-tasks.pdf
+on: [workflow_dispatch]
+jobs:
+  Generate-PDF:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y libre-office wkhtmltopdf pdftk
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Generate PDF
+        run: create-all-tasks.sh
+      - run: echo "Status ${{ job.status }}."
