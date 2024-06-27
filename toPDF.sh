@@ -6,33 +6,38 @@
 # Software needed
 # - libre office
 # - wkhtmltopdf
-# 
+# - pdftk
 OUTDIR="/tmp/out$$"
 RESULT="all-tasks.pdf"
 mkdir $OUTDIR
+shopt -s nullglob  # allows for loops to run 0 times if no files match the pattern
+
 # convert individual files
 for dir in 20??-*/
 do
-    PREFIX=${dir%%_*}
-    ODTNAME="$dir$PREFIX-eng.odt"
-    HTMLNAME="$dir$PREFIX-eng.html"
-    if [ -f $ODTNAME ]; then
-	echo converting $ODTNAME
-	lowriter --headless --convert-to pdf --outdir $OUTDIR $ODTNAME \
-		 >/dev/null
-    elif [ -f $HTMLNAME ]; then
-	echo converting $HTMLNAME
-	wkhtmltopdf --enable-local-file-access \
-		     "$dir$PREFIX-eng.html" $OUTDIR/$PREFIX-eng.pdf >/dev/null
-    else
-	echo no file found for $PREFIX
-    fi
+    BEBRAS_ID=${dir%%_*}
+    # convert ALL odt files satisfying the correct pattern
+    for ODTNAME in $dir$BEBRAS_ID*.odt
+    do
+	    echo converting $ODTNAME
+	    lowriter --headless --convert-to pdf --outdir $OUTDIR $ODTNAME >/dev/null
+		done
+		# convert ALL html files satisfying the correct pattern
+		for HTMLNAME in $dir$BEBRAS_ID*.html
+		do
+	    echo converting $HTMLNAME
+	    wkhtmltopdf --enable-local-file-access "$HTMLNAME" "$OUTDIR/${HTMLNAME##*/}.pdf" >/dev/null
+    done
 done
+shopt -u nullglob # turn off the nullglob option
 
-(cd $OUTDIR; pdftk *.pdf cat output $RESULT)
-mv $OUTDIR/$RESULT .
-
-# clean up
-rm $OUTDIR/*.pdf
+# concatenate all pdfs into one
+if [ -z "$(ls -A "$OUTDIR")" ]; then
+  echo "**WARNING** No ODT or HTML task files found in folder ${PWD##*/} - creating empty PDF"
+  touch $RESULT
+else
+  (cd $OUTDIR; pdftk *.pdf cat output $RESULT)
+  mv $OUTDIR/$RESULT .
+  rm $OUTDIR/*.pdf
+fi
 rmdir $OUTDIR
-

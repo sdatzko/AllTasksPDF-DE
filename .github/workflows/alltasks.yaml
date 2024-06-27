@@ -8,7 +8,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y libreoffice wkhtmltopdf pdftk
+          sudo apt install -y lowriter wkhtmltopdf pdftk
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: prepare for commit and push
@@ -17,10 +17,13 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Generate PDFs
         run: |
-          chmod ugo+x create-all-tasks.sh
+          chmod ugo+x create-all-tasks.sh toPDF.sh
           ./create-all-tasks.sh
       - name: Commit and push
         run: |
-          git commit -m "Created all-tasks.pdf"
-          git push
+          if [ ! -z "$(git status --porcelain .)" ]; then
+            git stage */all-tasks.pdf
+            git commit -m "Add all-tasks.pdf files"
+            git push
+          fi
       - run: echo "Status ${{ job.status }}."
