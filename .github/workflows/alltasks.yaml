@@ -8,7 +8,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y lowriter wkhtmltopdf pdftk
+          sudo apt install -y libreoffice-writer wkhtmltopdf pdftk
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: prepare for commit and push

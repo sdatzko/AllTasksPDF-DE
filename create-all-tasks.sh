@@ -14,11 +14,3 @@ do
     (cd $dir; echo "Processing $dir"; ../toPDF.sh)
   fi
 done
-
-# commit changes if necessary
-#if [ ! -z "$(git status --porcelain .)" ]; then
-#   git stage */all-tasks.pdf
-#   git commit -m "Add all-tasks.pdf files"
-#   git push
-#fi
-
