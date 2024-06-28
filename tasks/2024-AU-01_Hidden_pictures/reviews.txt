@@ -1,0 +1,48 @@
+To add or update a review, go to https://review.bebras.org.
+
+By: Pedro Ribeiro (svn: ribeiro)
+on 2024-04-04
+Assigned review
+[AGE] Ok as a hard task for 14y-16y and 16y-14y, might be a bit too hard for 12y-14y (but still acceptable)
+[IDEA] I really like the idea and the problem, with a clear algorithmic part (the process of encryption itself), the need for abstraction and with a focus on geometric patterns to convey the algorithms, instead of numbers and analytical reasoning. A beautiful and novel hard problem for bebras.
+[TEXT] The text is clear and short, and the provided images complement well and are essentially for understanding the transformations. Perhaps adding something to make clear that "moved 0 places to the right" is equivalent to not moving at all. The concept of "encrypt" might be challenging for the younger age group proposed.
+[EXPL] Clear and very visual explanation of why the answer is the correct.
+[TiI] Clear explanation with the main points. Links could be added for complementing information.
+[TiCT] Ok, but very generic.
+[GRAPH] Ok, with SVGs already provided and suitable for B&W printing or colour-blindness.
+========================================
+By: Seiichi Tani (svn: tani)
+on 2024-04-18
+Non-assigned review
+This task uniquely employs image transformation or matrix manipulation as its subject matter, which is a refreshing and interesting topic that hasn't been covered much in previous Bebras Challenges. 
+
+The difficulty level of the task may be too challenging for the Cadet age group [12yo - 14yo]. 
+
+The task statement, Answer Explanations, and This is Informatics sections provided are appropriate and well presented.
+========================================
+By: Ahto Truu (svn: truu)
+on 2024-04-20
+Assigned review
+[AGE] Specified and looks reasonable to me.
+[IDEA] Looks fresh and interesting, and certainly involves computational thinking.
+[TEXT] Clear. Maybe just a little too long for the youngest proposed age group (12-14yo).
+[EXPL] Well written and illustrated.
+[TiI] Present and clear.
+[TiCT] Present and clear.
+[GRAPH] Clear and attractive. All proper vector formats. Sources and licenses indicated.
+[AUTH] All present.
+[OTHER] In the TiI section, perhaps the sequence of H and V transforms can be considered a key? It may still not be very strong encryption under serious analysis, but at least the transforms are not commutative (for example, the sequence HV and the sequence VH produce different results for most source images).
+========================================
+By: Angy Coronel-Suarez (svn: coronel)
+on 2024-04-20
+Assigned review
+[AGE] I think it is difficult or time consuming to visualize the solution
+[IDEA] The idea of encrypting images is interesting, but I don't know if the difficulty of the task will capture the students' adequate attention
+[TEXT] The statement is very long and takes time
+[EXPL] I don't know if it is completely evident that the effect of the transformations is the one described or if something else needs to be shown to visualize it better
+[Til] Yes
+[TiCT] Yes
+[GRAPH] In the Mona Lisa graph the transformation is not seen very well
+[AUTH] Yes
+[NAME] Yes
+========================================

@@ -1,0 +1,61 @@
+To add or update a review, go to https://review.bebras.org.
+
+By: Zsuzsa Pluhár (svn: pluhar)
+on 2024-04-06
+Non-assigned review
+Nice idea for data representation.
+Body, texting: if we have "sequence" of numbers first, then I would use "sequence" for the "111011..." as well (and not string)
+Answer explanation: must be extended with the 1/0 sequences pairing with the images.
+
+TiI: Poor and not CS, it is only "counting some objects"- it doesn't contain CS background - the keywords are mostly from math - maybe the "prefix array" could be explained in TiI. 
+(but maybe it is only a special prefix array. - "A prefix sum array, also known as a cumulative sum array, is a derived array that stores the cumulative sum of elements in a given array. Each element in the prefix sum array represents the sum of all elements up to that index in the original array")
+If you write something in the Wording, please explain the important words.
+
+Graphics: only png files are included. The images must be created in svg format.
+========================================
+By: Susanne Datzko (svn: sdatzko)
+on 2024-04-14
+Assigned review
+[AGE] appropriate
+[IDEA] I like the idea of the task. It is quite simple to understand but not so easy to solve. I like the interactive version of the task, when the participants have to construct an array following the "101-sequence"
+[TEXT] The text has to be simpler und more straight forward - but probably use an example to explain it step by step.
+[EXPL] Explanation has to be step by step. Your explanation is too technical. Probably use it in the TiI section.
+[TiI] Could you probably explain with this, how you need to use a for-loop to index an array?
+[TiCT] I hope this is not true - This would be then a very boring task. 
+[GRAPH] Very easy graphic to do in svg - you could write me an e-Mail to make you those graphics.
+========================================
+By: Willem van der Vegt (svn: vandervegt)
+on 2024-04-16
+Assigned review
+Though the use of odd and even is a bit far fetched, the task of retrieving the order from an encoded description is really challenging and a nice Bebras task.
+[AGE] Appropriate
+[IDEA] Nice
+[TIL] The It's informatics section should be expanded. The one pass algorithm is also known as read-and-destroy. It is also about a form of encryption and that can be included in the It's Inf section.
+========================================
+By: Tom Naughton (svn: naughton)
+on 2024-04-22
+Assigned review
+[AGE] good
+
+[IDEA] A nice idea. It would be great if it could be improved by bringing into the story some real world aspect that would make it meaningful to only keep track of even/oddness; the problem of equally sharing sweets between two children, maybe?
+
+[TEXT] Text is clear.
+
+[EXPL] A technical explanation is given for one way to solve it, however, two things seem to be missing that would make this an excellent task:
+
+1) There should be a way to speed up finding a solution through a deeper understanding of the task. A task's difficulty should not be based on how tedious it is to solve. Is a short-cut possible here, or is it the case that even the brightest students must laboriously follow the algorithm?
+
+2) There should be an intuitive explanation why this is the ONLy correct solution for the binary sequence 01110100. Was this sequence chosen very carefully -- if the sequence is changed slightly might there be multiple correct solutions?
+
+[TiI] Needs work.
+
+[TiCT] Needs work.
+
+[GRAPH] good
+
+[AUTH] good 
+
+[NAME] good 
+
+[OTHER]
+========================================

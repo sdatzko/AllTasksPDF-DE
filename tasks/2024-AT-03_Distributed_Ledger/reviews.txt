@@ -1,0 +1,32 @@
+To add or update a review, go to https://review.bebras.org.
+
+By: Maria Cepeda (svn: mcepeda)
+on 2024-04-09
+Assigned review
+The process of "cheating" is not clearly defined and asumes that students will supose that a record that appears in a minority of servers must be considered cheating. For the example case this asumption may be true for the majority of students, but a lot of other cases more ambiguous can be thinked of and this penalizes the analytical student over one that only goes for the obvious option in the example instance. The task may be improved if the process of cheating is stated more clearly, but I believe this would make the problem easier.
+========================================
+By: Lucía Crivelli (svn: crivelli)
+on 2024-04-16
+Non-assigned review
+[AGE] Ok
+[CATEGORIES] Are missing?
+[IDEA] Fine but I don't like the narrative. It would be nice if the problem arose for another reason than cheating between them.
+[TEXT] The text is very long, it could be more specific so that it is not tedious to read.
+[EXPL] Ok
+[TiI] Ok
+[TiCT] The CT seccion is missing
+========================================
+By: nile Sadler (svn: sadler)
+on 2024-04-18
+Non-assigned review
+[AGE] specified and feels appropriate.
+[IDEA] requires some computational thinking skills, and is original, the tying into how blockchain works was rather novel and valuable. 
+[TEXT] Yes
+[EXPL] Yes
+[TiI] Yes is present but not complete.
+[TiCT] Not available
+[GRAPH] Graphics are simple tables, no licenses were currently there.
+[AUTH] Yes
+[NAME] Yes
+[OTHER]No
+========================================
