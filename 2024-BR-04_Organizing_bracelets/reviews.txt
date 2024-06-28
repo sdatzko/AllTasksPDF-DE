@@ -1,0 +1,27 @@
+To add or update a review, go to https://review.bebras.org.
+
+By: Sarah Chan (svn: chan)
+on 2024-04-04
+Assigned review
+This task crashed my LibreOffice repeatedly. When I did manage to get it open, all the bracelet images appeared the same (solid black beads). I think there is an issue with the images, but I think I understand what the task is intended to be.
+
+Are the patterns all meant to be in grayscale? Or is that a problem with my LibreOffice rendering?  As I am seeing it, the grayscale patterns are not different enough from each other. More points of difference between the patterns (such as colours or different shapes) would really help.
+
+I personally find pattern matching to be a weak Informatics connection although I accept it as a computational thinking skill. I also accept that this type of task can work well for younger students.
+========================================
+By: doyong kim (svn: doyong)
+on 2024-04-05
+Assigned review
+I love this task. This problem gives to me a variety of imaginations in pattern matching. However, the Reason for the correct answer needs to be clearer.
+========================================
+By: Lucía Crivelli (svn: crivelli)
+on 2024-04-15
+Non-assigned review
+[AGE] Ok
+[IDEA] Interesting
+[TEXT] Ok
+[EXPL] Ok
+[TiI] OK
+[TiCT] OK
+[GRAPH] It would be nice to add color to the graphics.
+========================================

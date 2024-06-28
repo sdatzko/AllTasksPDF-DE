@@ -1,0 +1,40 @@
+To add or update a review, go to https://review.bebras.org.
+
+By: Daumilas Ardickas (svn: ardickas)
+on 2024-04-10
+Assigned review
+Nice introduction to sorting. Didn't find anything to improve.
+========================================
+By: Susanne Datzko (svn: sdatzko)
+on 2024-04-14
+Assigned review
+[AGE] this task is harder than indicated
+[IDEA] I like the simpleness of the "setting" of the task. But this task can become a real timekiller if someone doesn't understand what is happening. I think this is only possible to do with a MC option.
+[TEXT] The steps are understandable and with a short description. Very nicely done! 
+[EXPL] Probably show the first steps to go from the unsorted to the sorted list.
+[TiI] very good
+[TiCT] well done.
+[GRAPH] very nice Kris! I like your simple design, but if you would like to have some beaver Gartenzwerge I could do this for you ;)
+========================================
+By: Lucía Crivelli (svn: crivelli)
+on 2024-04-19
+Non-assigned review
+[AGE] Ok
+[IDEA] Nice! It would be good to contextualize the task in some narrative that is attractive for students to read (a board game, for example).
+[TEXT] Ok
+[EXPL] Ok. Complementing the explanation with some image would be nice.
+[TiI] Ok
+[TiCT] Ok
+[GRAPH] OK
+========================================
+By: Marika Parviainen (svn: parviainen)
+on 2024-04-20
+Assigned review
+[AGE] I feel that this task is harder than suggested.
+[IDEA] Ok
+[TEXT] The task is well described, good text.
+[EXPL] It would be nice to have pictures showing the process in answer explanation.
+[TiI] Ok
+[TiCT] This is computatoinal thinking section is not as nice as TiI. 
+[GRAPH] It is a bit hard to count the number of the white counters. If the outlines were a bit darker, it might help. Then again, the height difference is quite clear and there is no need to counting.
+========================================
